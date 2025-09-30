@@ -1,0 +1,64 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+  height: 55vh;
+  padding: 20px;
+}
+
+.titulo-main::before {
+  content: "Desenvolvedor Web";
+  font-size: 42px;
+  animation: habilidade 10s linear infinite;
+}
+
+.main-text span {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.main-text h2 {
+  font-size: 102px;
+  margin-bottom: 10px;
+}
+
+@keyframes habilidade {
+  50% {
+    content: "Desenvolvedor Back-end";
+  }
+  100% {
+    content: "Desenvolvedor Full-stack";
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-main::before {
+    font-size: 32px;
+  }
+  .main-text span {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .main-text h2 {
+    font-size: 92px;
+  }
+  .main-container {
+    margin-top: 50px;
+    height: initial;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-main::before {
+    font-size: 28px;
+  }
+  .main-text span {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .main-text h2 {
+    font-size: 82px;
+  }
+}

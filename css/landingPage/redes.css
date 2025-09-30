@@ -1,0 +1,58 @@
+.redes-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  width: 60%;
+}
+
+.redes-content h1 {
+  border-bottom: 2px solid var(--cor-1);
+  align-self: start;
+  padding-bottom: 5px;
+  color: var(--cor-1);
+  font-size: 42px;
+}
+
+.redes-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 100px;
+  justify-self: end;
+}
+
+.redes-content ul li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 32px;
+}
+
+.redes-content ul li a img {
+  transition: 0.5s;
+  max-width: 100px;
+}
+
+.redes-content ul li a:hover img {
+  transform: rotateY(360deg);
+}
+
+@media (max-width: 900px) {
+  .redes-content {
+    grid-template-columns: 1fr;
+    height: initial;
+    justify-items: center;
+    width: 90%;
+  }
+  .redes-content ul {
+    justify-self: center;
+  }
+  .redes-bg {
+    min-height: initial;
+    margin-top: 30px;
+  }
+  .redes-content ul li a {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

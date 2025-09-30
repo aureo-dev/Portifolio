@@ -1,0 +1,25 @@
+.projetos-bg {
+  min-height: 90vh;
+}
+
+.projetos-content {
+  display: flex;
+  width: 60%;
+  padding: 20px;
+}
+
+.projetos-content h1 {
+  font-size: 42px;
+  color: var(--cor-1);
+}
+
+@media (max-width: 900px) {
+  .projetos-bg {
+    min-height: 50vh;
+    margin-top: 30px;
+  }
+  .projetos-content {
+    width: 90%;
+    justify-content: center;
+  }
+}

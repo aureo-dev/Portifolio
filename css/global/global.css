@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Hubballi", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+}
+
+body {
+  background: var(--cor-p1);
+}
+
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}

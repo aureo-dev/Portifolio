@@ -1,0 +1,27 @@
+body {
+  --cor-1: #fff;
+  --cor-2: #000;
+  --cor-p1: rgba(40, 101, 255, 0.82);
+}
+
+body.dark {
+  --cor-1: #222;
+  --cor-2: #fff;
+  --cor-p1: rgba(20, 60, 180, 0.82);
+}
+
+body.dark .header ul,
+body.dark .main-text,
+body.dark .titulo-main {
+  color: #fff;
+}
+
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}

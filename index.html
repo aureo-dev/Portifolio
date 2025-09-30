@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Portifolio Aureo</title>
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <nav>
+        <ul class="cor-1">
+          <li><a href="#main" class="ativo">Inicio</a> //</li>
+          <li><a href="#sobre">Sobre</a> //</li>
+          <li><a href="#experiencia">Experiência</a> //</li>
+          <li><a href="#redes">Redes</a> //</li>
+          <li><a href="#habilidades">Skills</a> //</li>
+          <li><a href="#projetos">Projetos</a> //</li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <svg width="44px" height="44px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="tema">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M24.0033 4L29.2737 9.27038H38.7296V18.7263L44 23.9967L38.7296 29.2737V38.7296H29.2737L24.0033 44L18.7264 38.7296H9.27036V29.2737L4 23.9967L9.27036 18.7263V9.27038H18.7264L24.0033 4Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M27 17C27 25 22 26 17 26C17 30 23.5 34 29 30C34.5 26 31 17 27 17Z" fill="#43CCF8" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <main class="main-bg" id="main">
+    <div class="main-container container">
+      <div class="main-text cor-1">
+        <span>Olá! Eu sou o</span>
+        <h2>Áureo Henrique</h2>
+        <h1 class="cor-1 titulo-main"></h1>
+      </div>
+    </div>
+  </main>
+
+  <article class="sobre-bg" id="sobre">
+    <div class="sobre-content container">
+      <h1>Sobre mim</h1>
+      <img src="img/sobreNos.png" alt="">
+      <p>Olá, me chamo Áureo, tenho 17 anos e atualmente estou cursando o ensino medio no COTEMIG</p>
+    </div>
+  </article>
+
+  <article class="experiencia-bg" id="experiencia">
+    <div class="experiencia-content container">
+      <h1>Experiência profissional</h1>
+      <div class="data-experiencia cor-1">
+        <h2>2025</h2>
+        <span>Jan</span>
+        <h2>Atual</h2>
+        <span>Em andamento</span>
+      </div>
+      <img src="img/experiencia.png" alt="">
+    </div>
+  </article>
+
+  <article class="redes-bg" id="redes">
+    <div class="redes-content container">
+      <h1>Minhas redes</h1>
+      <ul class="redes-direita cor-1">
+        <li><a href="">
+         <img src="img/redes/gitHub.png" alt="">
+           <a href="https://github.com/aureo-dev"> <h2>Github</h2> </a>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/redes/mail.png" alt="">
+            <h2>Gmail</h2>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/redes/linkedin.png" alt="">
+            <h2>Linkedin</h2>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="habilidades-bg" id="habilidades">
+    <div class="habilidades-content container">
+      <h1>Skills</h1>
+      <div class="tech">
+        <img src="img/habilidades/mySql.png" alt="">
+        <img src="img/habilidades/cSharp.png" alt="">
+        <img src="img/habilidades/download (1) 1.png" alt="">
+        <img src="img/habilidades/html.png" alt="">
+        <img src="img/habilidades/css.png" alt="">
+      </div>
+    </div>
+  </article>
+  <article class="projetos-bg" id="projetos">
+    <div class="projetos-content container">
+      <h1>Projetos</h1>
+  </article>
+
+  <article class="formulario-bg" id="contato">
+    <div class="formulario-content container">
+      <h1 class="cor-1">Contato</h1>
+      <form action="">
+        <div class="nome">
+          <label for="nome">Nome</label>
+          <input type="text" name="" id="nome">
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" oninput="valida_email()" placeholder="exemplo@gmail.com">
+        </div>
+
+        <div class="numero">
+          <label for="numero">Número</label>
+          <input type="text" id="numero" maxlength="15" oninput="mascara_numero()">
+        </div>
+        <div class="mensagem">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="" id="mensagem"></textarea>
+        </div>
+        <button onclick="enviarFormulario()" type="submit">enviar</button>
+      </form>
+    </div>
+    <div class="modal-contato" id="modalContato">
+      <div class="modal-conteudo">
+        <span class="fechar">&times;</span>
+        <h2>Escolha como enviar</h2>
+        <a href="" class="btn-link">WhatsApp</a>
+        <a href="" class="btn-link">Gmail</a>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
